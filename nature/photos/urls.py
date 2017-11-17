@@ -1,5 +1,7 @@
 from django.conf.urls import url
 from . import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns=[
     #The landing page
@@ -8,3 +10,5 @@ urlpatterns=[
     #The page to view a full size image and its details
     url(r'^(?P<post_id>[0-9]+)/$',views.single_image,name='image_details')
 ]
+if settings.DEBUG:
+    urlpatterns+=static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
