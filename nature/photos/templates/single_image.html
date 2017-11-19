@@ -1,6 +1,13 @@
 {%extends 'base.html'%}
 
 {%block content%}
-{{block.super}}
-<h1>This is the view for the image:{{post.post_id}} </h1>
+<div class="container">
+  <h1 class="text-center">{{post.img_desc}} </h1>
+  <img src="{{post.post_img.url}}" class="img-responsive" style="width:100%" alt="image" data-size="728x728">
+  <p class="pull-right">Photo by: {{post.user.first_name}}</p>
+  <p>Posted {{post.upd_date|timesince}}</p>
+  {%for tag in post.tags.all%}
+    <p>{{tag.name}}</p>
+  {%endfor%}
+</div>
 {%endblock%}
