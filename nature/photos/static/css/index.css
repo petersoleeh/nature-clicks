@@ -1,3 +1,28 @@
 .navbar-inverse{
-  background-color: #e9e6d3 !important;
+  background-color: #214138 !important;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+}
+body{
+  height: 100%;
+  padding: 60px;
+  color: #e9e6d3;
+  background-color: #214138;
+    border-right: 1px solid #e9e6d3;
+    border-left: 1px solid #e9e6d3;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+}
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #214138;
+  color: #e9e6d3;
+  text-align: center;
 }
