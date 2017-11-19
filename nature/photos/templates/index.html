@@ -2,5 +2,38 @@
 
 {%block content%}
 {{block.super}}
-<h1>Welcome to the site</h1>
+<div class="container">
+
+<h1>Unsplash</h1> <br>
+<p>Beautiful,free Kenyan photos</p> <br>
+<h2>Trending</h2>
+
+  {%for photo_item in posts%}
+
+    <div class="col-xs-6 col-md-4 col-lg-4">
+      <a href="/{{ photo_item.id }}"><img src="{{photo_item.post_img.url}}" class="img-responsive" style="width:100%" alt="image" data-size="728x728"></a> <br>
+    </div>
+  {%endfor%}
+</div>
+
+<footer>&#9426; Copyright 2017 Peter Maina. <small>All Rights Reserved</small></footer>
 {%endblock%}
+<!--
+<div class="row">
+  <div class="col-sm-3">
+    <p>Some text.1.</p>
+    <img src="{{photo.post_img.url}}" class="img-responsive" style="width:100%" alt="Image">
+  </div>
+  <div class="col-sm-3">
+    <p>Some text.2.</p>
+    <img src="{{photo.post_img.url}}" class="img-responsive" style="width:100%" alt="Image">
+  </div>
+  <div class="col-sm-3">
+    <p>Some text.3.</p>
+    <img src="{{photo.post_img.url}}" class="img-responsive" style="width:100%" alt="Image">
+  </div>
+  <div class="col-sm-3">
+    <p>Some text.4.</p>
+    <img src="{{photo.post_img.url}}" class="img-responsive" style="width:100%" alt="Image">
+  </div>
+</div> -->
