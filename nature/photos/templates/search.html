@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<div class="container">
+  <div class="row">
+    {%if images%}
+      <h2>Found {{images|length}} of searched tags {{message}}</h2>
+    {%else%}
+      <h2>Found 0 images for the searched tag {{message}}</h2>
+    {%endif%}
+  </div>
+
+  <div class="row">
+    {%if images%}
+      {% for image in images%}
+        <div class="col-xs-6 col-md-4 col-lg-4">
+          <a href="/{{ image.id }}"><img src="{{image.post_img.url}}" class="img-responsive" style="width:100%" alt="image" data-size="728x728"></a>
+          {%for tag in image.tags.all%}
+            <p>{{tag.name}}</p>
+          {%endfor%}
+        </div>
+      {%endfor%}
+    {%endif%}
+
+  </div>
+</div>
+{%endblock%}
