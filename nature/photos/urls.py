@@ -11,7 +11,10 @@ urlpatterns=[
     url(r'^(?P<post_id>[0-9]+)/$',views.single_image,name='image_details'),
 
     #contacts page
-    url(r'^contacts/$',views.contacts,name='contacts')
+    url(r'^contacts/$',views.contacts,name='contacts'),
+
+    #search posts
+    url(r'^search/',views.search_results, name='search_results')
 
 ]
 if settings.DEBUG:

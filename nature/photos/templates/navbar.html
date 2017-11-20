@@ -16,13 +16,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="{% url 'index'%}" ><strong> Nature Clicks</strong></a>
+      <a class="navbar-brand" href="{% url 'index'%}"><img src="/static/images/Unsplash.png" alt="logo" id="logo" width="30"></a>
     </div>
     <!-- adding a search form -->
     <div class="col-sm-6 col-md-6 navbar-left">
-      <form class="navbar-form" role="search" action="">
+      <form class="navbar-form" role="search" action="{% url 'search_results'%}">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search Photos" name="">
+          <input type="text" class="form-control" placeholder="Search Photos" name="image">
           <div class="input-group-btn">
             <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
           </div>
@@ -34,7 +34,7 @@
 
     <div class="navbar-collapse collapse" >
       <ul class="nav pull-right navbar-nav">
-        <li><a href="/">About</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="{% url 'contacts'%}">Contacts</a></li>
     </div>
 

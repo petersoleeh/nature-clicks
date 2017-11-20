@@ -38,3 +38,8 @@ class Post(models.Model):
     def all_posts(cls):
         posts = cls.objects.all()
         return posts
+
+    @classmethod
+    def search_by_tags(cls,search_term):
+        posts = cls.objects.filter(tags__name__icontains=search_term)
+        return posts
