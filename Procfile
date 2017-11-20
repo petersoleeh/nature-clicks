@@ -1,1 +1,1 @@
-web: gunicorn nature.wsgi
+web: gunicorn nature.wsgi --log-file -
