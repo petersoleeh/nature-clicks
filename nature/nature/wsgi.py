@@ -15,7 +15,7 @@ from django.core.wsgi import get_wsgi_application
 
 from whitenoise.django import DjangoWhiteNoise
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
+sys.path.append("/home/soleeh/Documents/moringacore-friday-ips/Django/IP1/Nature-clicks/nature")
 os.environ["DJANGO_SETTINGS_MODULE"] = 'nature.settings'
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nature.settings")
