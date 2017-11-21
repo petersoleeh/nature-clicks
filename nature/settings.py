@@ -32,7 +32,7 @@ SECRET_KEY = '@ogjr5(7+^xt^#0ekoury36mchy4z#ak$wc%qu&iyye_9(aplm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nature-clicks.herokuapp.com']
 
 
 # Application definition
