@@ -42,7 +42,7 @@ These instructions will get you a copy of the project up and running on your loc
  </ul>
  
  ## Known Bugs
- Tags are not yet clickable
+ Images not inline as expected
  
  
  ## Support and contact details
